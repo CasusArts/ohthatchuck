@@ -3,14 +3,16 @@ const chuck = new Vue({
 
   data: {
     randJoke: "",
-    allJokes: []
+    allJokes: [],
+    chuckPic: ""
   },
 
   methods: {
 
     getRandomJoke: function() {
       axios.get("https://api.chucknorris.io/jokes/random").then(response => {
-        this.randJoke = response.data.value;
+      this.randJoke = response.data.value;
+      this.chuckPic = response.data.icon_url;
       });
     },
 
