@@ -11,9 +11,10 @@ const chuck = new Vue({
     getRandomJoke: function() {
       axios.get("https://api.chucknorris.io/jokes/random").then(response => {
         this.randJoke = response.data.value;
-        console.log(this.randJoke);
       });
     },
+
+    // ALTERNATIVE API
     // getRandomJoke: function() {
     //   axios.get("http://api.icndb.com/jokes/random").then(response => {
     //     this.randJoke = response.data.value.joke;
