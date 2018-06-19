@@ -15,3 +15,5 @@ It's fetching data from ```https://api.chucknorris.io/``` REST API and getting n
 4. [x] Insert "profile pic" of Chuck
 5. [ ] Add category selector tool
 6. [ ] Extend layout to be responsive
+
+![Oh That Chuck](assets/screenshot.png)
