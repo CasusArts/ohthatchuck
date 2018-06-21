@@ -1,12 +1,17 @@
 /*
 * Reference colors:
 * Bulma Pink: #FA7C91
+* Selection Plum:   #DDA0DD
 */
 
 html, body {
   margin: 0px;
   padding: 0;
   height: 100%;
+}
+
+div::selection {
+  background: plum;
 }
 
 .my-header {
@@ -16,6 +21,7 @@ html, body {
 .subtitle {
   padding-top: 20px;
   max-width: 750px;
+  height: 80px;
 }
 .center {
   margin-left: 100px;
@@ -38,4 +44,12 @@ html, body {
 .chuck-background {
   background: url("../assets/chuck-norris-right.png") no-repeat right;
   background-size: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .chuck-background .small-size{
+    background: url("../assets/chuck-norris-right.png") no-repeat right;
+    /* width: 50%; */
+    background-size: contain;
+  }
 }
